@@ -2,15 +2,13 @@ body {
     height: 100vh;
     width: 100%;
     margin: 0;
+    font-family: 'Cambay', sans-serif;
 }
 
-section div {
+#introWrapper div {
     background-color: #3f4045;
     height: 70vh;
     line-height: 200px;
-
-
-
 }
 
 #introText {
@@ -20,7 +18,6 @@ section div {
     padding: 70px 0;
     font-size: 2rem;
 }
-
 #introText span {
     border-bottom: 1px dashed #e0e1dd;
 }
@@ -28,3 +25,24 @@ section div {
 #introText span:hover {
     cursor: help;
 }
+
+#projectsWrapper {
+    margin: 5px;
+    padding: 10px;
+}
+
+.card {
+    background-color: #7a8b99;
+    margin: 5px;
+    width: 25%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+  }
+  
+  /* Add rounded corners to the top left and the top right corner of the image */
+  .card img {
+    border-radius: 5px 5px 0 0;
+    opacity: 0.8;
+  }
+
