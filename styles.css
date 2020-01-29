@@ -1,7 +1,7 @@
 body {
     height: 100vh;
     width: 100%;
-    margin: 0;
+    margin: 5px;
     font-family: 'Cambay', sans-serif;
     background-color:black;
     background-image:
@@ -14,7 +14,7 @@ body {
 }
 
 #introWrapper div {
-    height: 15vh;
+    height: 30vh;
     line-height: 200px;
 }
 
@@ -23,7 +23,7 @@ body {
     color: #e0e1dd;
     font-family: 'Bangers', cursive;
     padding: 70px 0;
-    font-size: 2rem;
+    font-size: 4rem;
 }
 
 #introText span {
@@ -41,10 +41,16 @@ body {
 #projectsWrapper, #skillsWrapper {
     margin: 5px;
     padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start 
 }
 
+
 #projectsWrapper > div {
-  display: inline-flex;
+  flex-basis: auto;
+  justify-content: space-around;
 }
 
 #skillsWrapper > div {
@@ -60,24 +66,28 @@ body {
 
 .sectionHeader {
     color: #e0e1dd;
+    letter-spacing: 1.5rem;
+    margin: 15px;
 }
 
 .card {
     background-color: ##3f4045;
     margin: 5px;
     border: 1px solid #3f4045;
-    width: 25%;
+    width: 20%;
     padding: 3px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
     color: #e0e1dd;
+    text-align: center;
   }
   
   /* Add rounded corners to the top left and the top right corner of the image */
-  .card-img {
+  .card img {
     border-bottom: 1px solid #3f4045;
     z-index: -1;
+    align-self: center;
 
   }
 
@@ -95,20 +105,30 @@ body {
 /* //modal stuff */
 .modal {
   position: absolute;
-  background: rgba(0, 0, 0, .7);
+  background: rgba(18, 22, 25, .7);
   top: 0;
   bottom: 0;
-  left: 0;
+  left: 0;  
   right: 0;
   justify-content: center;
   align-items: center;
   display: none;
-  font-family: Arial, Helvetica, sans-serif;
+font-family: 'Advent Pro', sans-serif;
+letter-spacing: 2px; 
+
+  color: #3f4045;
+  text-align: center;
 }
 
 .inner-modal {
-  padding: 6em 10em;
-  background: white;
+  padding: 4em 5em;
+  background: rgb(18,12,110);
+  background: -moz-linear-gradient(225deg, rgba(18,12,110,1) 14%, rgba(72,43,100,1) 49%, rgba(33,7,43,1) 100%);
+  background: -webkit-linear-gradient(225deg, rgba(18,12,110,1) 14%, rgba(72,43,100,1) 49%, rgba(33,7,43,1) 100%);
+  background: linear-gradient(225deg, rgba(18,12,110,1) 14%, rgba(72,43,100,1) 49%, rgba(33,7,43,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#120c6e",endColorstr="#21072b",GradientType=1);
+  
+  color: #e0e1dd;
   box-shadow: $box-shadow;
   border-radius: 0.5em;
   position: relative;
