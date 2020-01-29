@@ -11,7 +11,24 @@ body {
     radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
     background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
     background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+    
 }
+
+/* unvisited link */
+a:link {
+  color: #7a8b99;
+}
+
+/* visited link */
+a:visited {
+  color: #7a8b99;
+}
+
+/* mouse over link */
+a:hover, a:active {
+  color:#e0e1dd;
+}
+
 
 #introWrapper div {
     height: 30vh;
@@ -38,7 +55,7 @@ body {
     box-shadow: $box-shadow-hover;
 }
 
-#projectsWrapper, #skillsWrapper {
+#projectsWrapper, #skillsWrapper , #contactWrapper > div{
     margin: 5px;
     padding: 10px;
     display: flex;
@@ -53,7 +70,7 @@ body {
   justify-content: space-around;
 }
 
-#skillsWrapper > div {
+#skillsWrapper > div,#contactWrapper > div {
     background-color: #3f4045;
     opacity: 0.6;
     display: inline-flex;
