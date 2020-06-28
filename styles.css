@@ -2,7 +2,10 @@ body {
     height: 100vh;
     width: 100%;
     margin: 5px;
+<<<<<<< HEAD
     font-size: 1.2em;
+=======
+>>>>>>> 1383796dd9a17ebb8843f2863ed05a121ee5d085
     font-family: 'Cambay', sans-serif;
     background-color:black;
     background-image:
@@ -35,7 +38,11 @@ a:hover, a:active {
 
 #introWrapper div {
     height: 30vh;
+<<<<<<< HEAD
     line-height: 200px;
+=======
+    line-height: 200px;xw
+>>>>>>> 1383796dd9a17ebb8843f2863ed05a121ee5d085
 }
 
 #introText {
@@ -58,16 +65,21 @@ a:hover, a:active {
     box-shadow: $box-shadow-hover;
 }
 
+<<<<<<< HEAD
 h3 {
   text-align: center;
 }
 
 .content-wrapper {
+=======
+#projectsWrapper, #skillsWrapper , #contactWrapper {
+>>>>>>> 1383796dd9a17ebb8843f2863ed05a121ee5d085
     margin: 5px;
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+<<<<<<< HEAD
     justify-content: center;
     font-size: .9rem;
 }
@@ -76,13 +88,23 @@ h3 {
   align-content: center;
 }
 
+=======
+    justify-content: flex-start ;
+    font-size: .9rem;
+}
+
+>>>>>>> 1383796dd9a17ebb8843f2863ed05a121ee5d085
 
 #projectsWrapper > div {
   flex-basis: auto;
   justify-content: space-around;
 }
 
+<<<<<<< HEAD
 #skillsWrapper > div,#contactWrapper > div, #currentFocus > div {
+=======
+#skillsWrapper > div,#contactWrapper > div {
+>>>>>>> 1383796dd9a17ebb8843f2863ed05a121ee5d085
     background-color: #3f4045;
 
     opacity: 0.6;
@@ -96,6 +118,10 @@ h3 {
 
 .sectionHeader {
     color: #e0e1dd;
+<<<<<<< HEAD
+=======
+    letter-spacing: 1.5rem;
+>>>>>>> 1383796dd9a17ebb8843f2863ed05a121ee5d085
     margin: 15px;
 }
 
@@ -185,10 +211,13 @@ letter-spacing: 2px;
 
 .is-open {
   display: flex;
+<<<<<<< HEAD
 }
 
 @media only screen and (max-width: 600px) {
   body div {
     font-size: .8em;
   }
+=======
+>>>>>>> 1383796dd9a17ebb8843f2863ed05a121ee5d085
 }
