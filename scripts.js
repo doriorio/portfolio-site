@@ -1,3 +1,5 @@
+
+
 const modalToggle = document.querySelector(".button"),
       modal = document.querySelector(".modal"),
       closeButton = document.querySelector(".close");
