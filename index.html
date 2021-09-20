@@ -32,9 +32,13 @@
 
 
     <section id="currentFocus" class='content-wrapper'> 
-        <div>Wrapping my head around JS' inner workings</div></li>
-        <div>Improving around basics, focusing on when to use CSS & mark-up to lessen dependency on client-side Javascript</div></li>
-        <div>Learning  &nbsp<a href="https://codesandbox.io/s/ecstatic-frog-mgjzj?file=/public/index.html" style="color:aquamarine;"  target="_blank">TypeScript and React</a></div></li>
+        <div>Wrapping my head around JS' inner workings</div>
+        <div>Improving around basics, focusing on when to use CSS & mark-up to lessen dependency on client-side Javascript</div>
+        <div>Learning 
+            <span class="spacer">
+            </span>
+                <a href="https://codesandbox.io/s/ecstatic-frog-mgjzj?file=/public/index.html" style="color:aquamarine;"  target="_blank">TypeScript and React</a>
+        </div>
     </section>
 
 
@@ -153,41 +157,7 @@
     <!--JavaScript at end of body for optimized loading-->
     <script src="scripts.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<script>
-carousel = (function(){
-  var box = document.querySelector('.carousel-box');
-  var next = box.querySelector('.next');
-  var prev = box.querySelector('.prev');
-  var items = box.querySelectorAll('.carousel-content li');
-  var counter = 0;
-  var amount = items.length;
-  var current = items[0];
-  box.classList.add('active');
-  function navigate(direction) {
-    current.classList.remove('current');
-    counter = counter + direction;
-    if (direction === -1 && 
-        counter < 0) { 
-      counter = amount - 1; 
-    }
-    if (direction === 1 && 
-        !items[counter]) { 
-      counter = 0;
-    }
-    current = items[counter];
-    current.classList.add('current');
-  }
-  next.addEventListener('click', function(ev) {
-    navigate(1);
-  });
-  prev.addEventListener('click', function(ev) {
-    navigate(-1);
-  });
-  navigate(0);
-})();
-</script>
+
 </body>
 
 </html>
-
-<!-- colors -->

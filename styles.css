@@ -17,58 +17,11 @@ body {
 }
 
 
-.carousel-box {
-  width: 100px;
-  position: relative;
-  margin: 1em;
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 10px #ccc;
-  overflow: hidden;
-}
-.carousel-content {
-  margin: 0;
-  padding: 0;
-}
-.carousel-content li {
-  font-size: 100px;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  list-style: none;
-  text-align: center;
+
+.spacer:after {
+  content: "\00a0";
 }
 
-.carousel-content li {
-  font-size: 100px;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  list-style: none;
-  text-align: center;
-}
-
-.active {
-  height: 400px;
-}
-.active li {
-  position: absolute;
-  top: 200px;
-}
-.active li.current {
-  top: 30px;
-}
-
-.active .buttons {
-  padding: 5px 0;
-  background: #eee;
-  text-align: center;
-  z-index: 10;
-  position: relative;
-}
-.carouselbox button {
-  border: none;
-  display: none;
-}
 .active button {
   display: block;
 } 
@@ -140,22 +93,26 @@ align-content: center;
 
 
 #projectsWrapper > div {
-flex-basis: auto;
-justify-content: space-around;
+  flex-basis: auto;
+  justify-content: space-around;
 }
 
 #skillsWrapper > div,#contactWrapper > div, #currentFocus > div {
   background-color: #3f4045;
-
+  text-align: start;
   opacity: 0.6;
   display: inline-flex;
-  padding: 10px;
+  padding: 5%;
   width: 25%;
+  height: fit-content;
   margin: 10px;
-  height: 75px;
   color: #e0e1dd;
+  text-align: center;
 }
 
+#currentFocus > div > a {
+  display: inline-block;
+}
 .sectionHeader {
   color: #e0e1dd;
   margin: 15px;
